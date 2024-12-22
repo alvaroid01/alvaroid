@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'apple-ii';
+  src: url('./assets/fonts/PrintChar21.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'apple-iii';
+  src: url('./assets/fonts/PRNumber3.ttf') format('truetype');
+}
+
+:root{
+ background-color: black;
+ color: #00EB89;
+ font-family: 'apple-ii', monospace;
+ font-size: 14px;
+ overflow-y: hidden;
+}
+.content-wrapper{
+  display: flex;
+  justify-content: space-evenly;
+}
+.content-left,.content-right{
+  text-align: left;
+  display: flex;
+  width: 49%;
+  padding: 15px
+  ;
+}
+.content-left{
+  width:15.7%;
+}
+.content-left ul {
+  margin: 0;
+  margin-left: 15px;
+  list-style:decimal-leading-zero;
+}
+.content-left li {
+  margin: 0;
+  padding: 0;
+}
+.content-right{
+  width:85%;
+}
+.vertical-spacer{
+  margin-left: 10px;
+  width: 2px;
+  height: 100vh;
+  background: repeating-linear-gradient(
+    to bottom,
+    #00EB89 0,
+    #00EB89 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+.horizontal-spacer {
+  margin-top: 5px;
+
+  width: 100%; 
+  height: 2px;
+  background: repeating-linear-gradient(
+    to left,
+    #00EB89 0px,
+    #00EB89 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+.route a {
+  cursor: pointer;
+}
+#index{
+  display: flex;
+}
+#projects,#about,#blog{
+  display: none;
+}

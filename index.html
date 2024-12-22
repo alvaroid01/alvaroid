@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="./index.js"></script>
-	<link rel="stylesheet" href="./index.css">
-	<title>Alvaro</title>
-</head>
-<body>
-HOLA
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <title>Alvaro</title>
+  </head>
+  <div class="route">
+    /<a onclick="goToIndex()">Users/alvaroiglesias</a>/www/<span
+      class="current-path"
+      >index.html</span
+    >
+  </div>
+
+  <div class="horizontal-spacer"></div>
+  <body>
+    <div class="content-wrapper">
+      <div class="content-left">
+        <ul>
+          <li onclick="renderSection('index')">Home</li>
+          <li onclick="renderSection('projects')">Projects</li>
+          <li onclick="renderSection('about')">About me</li>
+          <li onclick="renderSection('blog')">Blog</li>
+        </ul>
+      </div>
+      <div class="vertical-spacer"></div>
+      <div class="content-right">
+        <!-- <div id="indwerr">Hi there! Welcome to my webpage. If you happen to have</div> -->
+        <div id="projects">Projects</div>
+        <div id="index">
+          <!-- I am Alvaro Iglesias, a Software Engineer  -->Hello there
+        </div>
+        <div id="blog">Blog</div>
+      </div>
+    </div>
+  </body>
 </html>
